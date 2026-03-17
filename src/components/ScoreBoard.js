@@ -37,7 +37,7 @@ function ScoreBoard({ moves, seconds, matchedCount, totalPairs, onReset }) {
 
       <button
         onClick={onReset}
-        className="px-8 py-2.5 bg-[#facc15] text-[#1a1640] font-bold rounded-full hover:bg-[#fde047] transition-all shadow-[0_4px_15px_rgba(250,204,21,0.3)] flex items-center gap-2 mx-auto mb-4"
+        className="px-8 py-2.5 bg-[#facc15] text-[#1a1640] font-bold rounded-full hover:bg-[#fde047] transition-all transform duration-200 hover:scale-105 shadow-[0_4px_15px_rgba(250,204,21,0.3)] flex items-center gap-2 mx-auto mb-4"
       >
         {isGameComplete ? <FaRedo className="text-sm" /> : <FaSyncAlt className="text-sm" />}
         {isGameComplete ? 'Main Lagi' : 'Acak Ulang'}

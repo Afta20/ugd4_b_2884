@@ -105,10 +105,10 @@ export default function Home() {
                 setDifficulty(lvl);
                 reset();
               }}
-              className={`px-5 py-2 rounded-xl text-sm font-bold transition-all ${
+              className={`px-5 py-2 rounded-xl text-sm font-bold transition-all transform duration-200 ${
                 difficulty === lvl 
-                ? 'bg-[#facc15] text-[#1a1640] shadow-[0_0_15px_rgba(250,204,21,0.5)]' 
-                : 'bg-[#3f3c71] text-[#a5b4fc] hover:bg-[#4e4b8a]'
+                ? 'bg-[#facc15] text-[#1a1640] shadow-[0_0_15px_rgba(250,204,21,0.5)] hover:scale-105' 
+                : 'bg-[#3f3c71] text-[#a5b4fc] hover:bg-[#4e4b8a] hover:scale-105'
               }`}
             >
               {lvl === 4 ? '😊 Easy' : lvl === 6 ? '😐 Medium' : '💀 Hard'} ({lvl})

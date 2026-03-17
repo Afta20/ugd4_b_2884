@@ -23,9 +23,17 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(120deg, #1a1640, #3c1978, #17183f);
+  background-size: 200% 200%;
+  animation: gradient-background 12s ease infinite;
   color: var(--foreground);
   font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradient-background {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes slide-down {
